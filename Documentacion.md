@@ -151,11 +151,11 @@ Este es un sistema de consenso distribuido que sirve para verificar los movimien
 
 Una de sus aplicaciones emergentes más relevantes tiene que ver con lo que se conoce como “contratos inteligentes” o smart contracts.
 
-En 1994, Nick Szabo, un jurista y criptografo, se dio cuenta de que un libro mayor descentralizado podría ser utilizado para realizar contratos digitales. En este formato los contratos pueden ser convertidos a código, guardados y replicados en el sistema y supervisados por la red de computadoras que corre el programa blockchain.
+En 1994, Nick Szabo, un jurista y criptógrafo, se dio cuenta de que un libro mayor descentralizado podría ser utilizado para realizar contratos digitales. En este formato los contratos pueden ser convertidos a código, guardados y replicados en el sistema y supervisados por la red de computadoras que corre el programa blockchain.
 
 Los contratos inteligentes nos ayudan a intercambiar dinero, propiedades, activos o cualquier bien de valor de una manera sencilla, evitando los gastos por el servicio de intermediarios y sin revelar ningún tipo de información confidencial sobre las partes y/o naturaleza de la transacción.
 
-Un ejemplo seria la venta o alquiler de un automóvil. Se podría hacerlo a través de blockchain pagando con monedas digitales. El comprador obtiene el recibo que es un smart contract, y la llave digital que llega a este en la fecha especificada. Si la llave no llega a tiempo, se le reembolsa el dinero. Si llega ambas partes reciben lo acordado a tiempo. El sistema funciona con la premisa de Si-entonces y tiene como veedores a mucha gente, así que se puede esperar un delivery sin inconvenientes. Si te doy la llave, de seguro obtengo mi pago, si envías cierta cantidad de bitcoin por ejemplo, recibirás la llave del automóvil. El documento es automáticamente cancelado después de la fecha, y el código no puede ser interferido por ninguno sin que que el otro sepa ya que todos los participantes son alertados simultáneamente.
+Un ejemplo seria la venta o alquiler de un automóvil. Se podría hacerlo a través de blockchain pagando con monedas digitales. El comprador obtiene el recibo que es un smart contract, y la llave digital que llega a este en la fecha especificada. Si la llave no llega a tiempo, se le reembolsa el dinero. Si llega, ambas partes reciben lo acordado a tiempo. El sistema funciona con la premisa de Si-entonces y tiene como veedores a mucha gente, así que se puede esperar un delivery sin inconvenientes. Si te doy la llave, de seguro obtengo mi pago, si envías cierta cantidad de bitcoin por ejemplo, recibirás la llave del automóvil. El documento es automáticamente cancelado después de la fecha, y el código no puede ser interferido por ninguno sin que que el otro sepa ya que todos los participantes son alertados simultáneamente.
 
 – Autonomía: Es uno mismo quien accede al acuerdo. No existen intermediarios, por lo que también se ahorra dinero.
 – Confianza: Los documentos están encriptados en un shared-ledger. Nopueden perderse.
@@ -200,6 +200,52 @@ Podría vincular esos documentos internos al hash de una transacción realizada 
     - Gobierno transparente
     - Ecommerce
     - Identificación
+
+## Blockchain as a Service
+
+El BaaS significa que un proveedor de servicios externo proporciona toda la “tecnología e infraestructura de blockchain” necesaria para un cliente a cambio de un precio. Al pagar por el BaaS, el cliente paga al proveedor del BaaS para que este configure y mantenga los nodos conectados en el blockchain en su nombre. Un proveedor BaaS maneja el complejo back-end para el cliente y su negocio. 
+
+El operador BaaS es responsable del buen funcionamiento de los componentes de software y la infraestructura asociados. También realiza funciones adicionales, como la gestión del ancho de banda, la asignación óptima de recursos, el cumplimiento de los requisitos de alojamiento así como funciones de seguridad, como la prevención de ataques de piratas informáticos. 
+
+Al usar el modelo BaaS, en lugar de preocuparse por la infraestructura, el cliente puede concentrarse en su tarea principal, que no es otra que el funcionamiento de su propio blockchain y aumentar la productividad.
+
+
+En definitiva la idea que sigue BaaS es que el proveedor nos proporciona toda la infraestructura y nosotros solo tenemos que lanzar nuestra aplicación. Aunque como veremos, esto aún esta empezando a desempeñarse.
+
+### AMAZON
+
+Encontramos dos servicios principalmente:
+
+- Amazon Quantum Ledger Database (QLDB): 
+    Base de datos de contabilidad completamente administrada en la que se proporciona un registro de transacciones transparente, inmutable y que se puede verificar mediante criptografía, cuya propiedad denota una autoridad central de confianza. Amazon QLDB registra cada uno de los cambios que se producen en los datos de las aplicaciones y mantiene un historial completo y que se pueda verificar.
+
+    ![Figura6](img/11.png)
+
+    De hecho este servicio lo ofertan dentro del marco de blockchain, pero realmente no lo es. Esta BD te ofrece la filosofia del blockchain pero sin descentralización. El siguiente caso si lo sería.
+
+    https://aws.amazon.com/es/qldb/faqs/
+
+
+- Amazon Managed Blockchain: 
+    Amazon Managed Blockchain es un servicio completamente administrado que facilita la creación y administración de redes de blockchain escalables mediante el uso de los marcos de código abierto populares Hyperledger Fabric y Ethereum (aún no disponible).
+
+    Amazon Managed Blockchain es un servicio completamente administrado que le permite configurar y administrar una red de blockchain escalable con unos pocos clics. Con Amazon Managed Blockchain se elimina la sobrecarga que implica la creación de la red. Además, el servicio ajusta su escala automáticamente para satisfacer las demandas de miles de aplicaciones que ejecutan millones de transacciones. Una vez que su red esté funcionando, se facilitará la tarea de administrar y mantener su red de cadenas de bloques con Managed Blockchain. El servicio administra sus certificados, le permite invitar de forma sencilla a nuevos miembros para que se unan a la red y, además, realiza un seguimiento de las métricas operacionales como, por ejemplo, el uso de recursos informáticos, de memoria y almacenamiento. Además, Managed Blockchain puede replicar una copia inmutable de su actividad de red de cadenas de bloques a Amazon Quantum Ledger Database (QLDB), una base de datos de libro mayor completamente administrada. Esto le permite analizar fácilmente la actividad de la red de manera externa y obtener información acerca de las tendencias.
+
+    En definitiva te está proporcionando toda la capacidad del Cloud y de un proveedor como viene siendo Amazon, pero haciendo uso de los marcos de trabajo (empresas) que están a la vanguardia de esta tecnología.
+
+    ![Figura6](img/12.png)
+
+
+### AZURE
+
+![Figura6](img/13.png)
+
+
+Basicamente lo que te proporcionan son unas plantillas con las que tu puedes construir tu topologia de red para desplegar más rapidamente.
+
+
+
+
 
 
 
