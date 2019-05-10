@@ -238,8 +238,10 @@ Encontramos dos servicios principalmente:
 
 ### AZURE
 
-![Figura6](img/13.png)
+- Azure Blockchain Workbench :
+    El banco de trabajo Azure Blockchain es la manera más rápida de empezar con el blockchain en Azure. Esta herramienta permite a los desarrolladores desplegar un libro mayor de cadenas de bloques junto con un conjunto de servicios relevantes de Azure que se utilizan con más frecuencia para construir una aplicación basada en cadenas de bloques. En lugar de pasar horas configurando la infraestructura necesaria y los servicios cloud, hemos automatizado el largo andamiaje para simplificar el desarrollo y permitir a los usuarios centrarse en la lógica de la aplicación y los flujos de trabajo.
 
+![Figura6](img/13.png)
 
 Basicamente lo que te proporcionan son unas plantillas con las que tu puedes construir tu topologia de red para desplegar más rapidamente.
 
