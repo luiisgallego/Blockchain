@@ -1,103 +1,206 @@
 # BLOCKCHAIN, SUS APLICACIONES Y EL CLOUD
 
-A lo largo de estos años es fácil que hayamos oido hablar la palabra Blockchain, especialmente ligada al Bitcoin y resto de monedas. Pero, ¿qué es realmente el blockchain?
+A lo largo de estos años es fácil que hayamos oido hablar de la palabra Blockchain, especialmente ligada al Bitcoin y resto de monedas. Pero, ¿qué es realmente el blockchain?
 
 ## INTRODUCCIÓN
 
-Esta tecnología tuvo su origen como soporte para las transacciones con bitcoin, fue originalmente utilizada por figuras que se oponían al sistema establecido y que querían conseguir independencia del control central. 
+Esta tecnología tuvo su origen como soporte para las transacciones con bitcoin, por lo fue originalmente utilizada por figuras que se oponían al sistema establecido y que querían conseguir independencia sobre un control central. 
 
-Veamos un ejemplo concreto, en este caso una transacción monetaria y el rol que el bitcoin podr ía tener. Pagamos un dolar por algún bien material. Esta transacción se realizó porque el valor de un dolar está representado por un bil- lete, el cual fue creado por un Gobierno en el que ambas partes confían, que se reconocen y aceptan. Cuando esta compra-venta se concrete, los detalles deben quedar escritos en un libro de cuentas.
+Pensemos en un ejemplo concreto, en este caso una transacción monetaria y el rol que el bitcoin podría tener. Basicamente pagamos un dolar por algún bien material, pero esta transacción se realizó porque el valor de un dolar está representado por un billete, el cual fue creado por un Gobierno en el que ambas partes confían, que se reconocen y aceptan. Entonces cuando esta compra-venta se concreta, los detalles deben quedar escritos en un libro de cuentas.
 
-En el caso de transacciones electrónicas entran en participación terceras partes fiables como bancos u operadores como Google Wallet o Paypal. Pero se sigue manejando una moneda centralizada como el dolar. Al final, las entidades financieras concilian las operaciones y obtienen sus beneficios correspondientes.
+En el caso de transacciones electrónicas entran en participación terceras partes fiables como bancos u operadores como  Paypal. Pero se sigue manejando una moneda centralizada como el dolar. Al final, las entidades financieras coordinan las operaciones y obtienen sus beneficios correspondientes.
 
-La situación cambia cuando la moneda es virtual y no la emite una entidad financiera o administración. En este caso se garantiza la integridad y fiabilidad basándose en el consenso. Aquí entra en juego el blockchain. El Blockchain (o cadena de bloques) es una base de datos compartida que funciona como un libro para el registro de operaciones de compra-venta o cualquier otra transacción.
+La situación cambia cuando la moneda es virtual y no la emite una entidad financiera o administración. En este caso se garantiza la integridad y fiabilidad basándose en el consenso, que es donde entra en juego el blockchain. Esta cadena de bloques es una base de datos compartida que funciona como un libro para el registro de operaciones de compra-venta o cualquier otro tipo de transacción.
 
-Es un conjunto de apuntes que están en una base de datos compartida en la que se registran mediante códigos las transacciones realizadas. Al utilizar claves criptográficas y al estar distribuido por muchos ordenadores presenta ventajas en la seguridad frente a manipulaciones y fraudes. Una modificación en una de las copias seria inútil, ya que se debe realizar el cambio en todas las copias porque la base es abierta y pública [2]. La potencia de blockchains viene por la conjunción de sus tres grandes cualidades: irrefutable, irrevocable y distribuida.
+Se podróa decir que es un conjunto de apuntes que están en una base de datos compartida en la que se registran mediante códigos las transacciones realizadas. Al utilizar claves criptográficas y al estar distribuido por muchos ordenadores presenta ventajas en la seguridad frente a manipulaciones y fraudes, ya que una modificación en una de las copias seria inútil, ya que se debe realizar el cambio en todas las copias porque la base es abierta y pública [2]. En definitiva, la potencia de blockchains viene por la unión de sus tres grandes cualidades: irrefutable, irrevocable y distribuida.
 
-Ahora bien, esta tecnología puede cambiar el mundo porque este modo de operar, en el que toda la información se distribuye con total transparencia por todos los nodos del sistema, puede terminar aplicándose a todo tipo de transac- ciones entre todo tipo de intervinientes, públicos o privados.[3]
 
-    - Clasificación segun el acceso a los datos? 
+
 
 ## COMPONENTES
 
-La tecnología está basada en cuatro fundamentos: el registro compartido de las transacciones (ledger), el consenso para verificar las transacciones, un contrato que determina las reglas de funcionamiento de las transacciones y finalmente la criptografía, que es el fundamento de todo[5]. En esta sección veremos los componentes que hacen esto posible.
+La tecnología está basada en cuatro fundamentos: 
+    - El registro compartido de las transacciones. 
+    - El consenso para verificar las transacciones.
+    - Un contrato que determina las reglas de funcionamiento de las transacciones. 
+    - La criptografía, que es el fundamento de todo[5]. 
+    
+Para esto se hacen uso de 3 componentes, los bloques, los mineros y los nodos, que ahora vamos a comentar.
 
 ### Bloques
 
-Blockchain es un registro de todas las transacciones que se empaquetan en blo- ques que los mineros luego se encargan de verificar. Luego serán agregadas a la cadena una vez terminada su validación y distribuidas a todos los nodos que forman la red. En la actualidad, la cadena de bloques bitcoin ocupa unos 170 gigas aproximadamente)[6].
-Un bloque es un conjunto de transacciones confirmadas e información adi- cional que se ha incluido en la cadena de bloques. Cada bloque que forma parte de la cadena (menos el primer bloque que inicia la cadena) está formado por:
-1. Un código alfanumérico que enlaza con el bloque anterior
-2. El “paquete” de transacciones que incluye
+Blockchain se basa en crear un registro de todas las transacciones, y estas se empaquetan en bloques que los mineros crean y luego se encargan de verificar. Una vez terminada su validación serán agregadas a la cadena y distribuidas a todos los nodos que forman la red. 
+
+Por tanto, un bloque es un conjunto de transacciones confirmadas e información adicional que se ha incluido en la cadena de bloques. Cada bloque que forma parte de la cadena, menos el primer bloque que inicia la cadena, está formado por:
+
+1. Un código alfanumérico que enlaza con el bloque anterior.
+2. El “paquete” de transacciones que incluye.
 3. Otro código alfanumérico que enlazará con el siguiente bloque.
 
 ![Figura2](img/2.png)
-
-El bloque en progreso lo que intenta es averiguar con cálculos el ultimo punto.
-Los bloques son generados por los mineros.
 
 ### Mineros
 
 Los mineros son ordenadores dedicados que aportan su poder computacional a la red para verificar las transacciones que se llevan a cabo. Son computadoras que se encargan de autorizar la adición de los bloques de transacción. Estos siguen los siguientes pasos[7]:
 
-1. Las nuevas transacciones se transmiten a todos los nodos
+1. Las nuevas transacciones se transmiten a todos los nodos.
 2. Cada nodo de la minería recoge nuevas transacciones en un bloque.
-3. Cada nodo minero trabaja en la búsqueda de una prueba de trabajo para su
-bloque.
-4. Cuando un nodo de la minería encuentra una prueba de trabajo, este trans-
-mite el bloque a todos los nodos.
-5. Los demás nodos acepta el bloque sólo si todas las transacciones son válidas
-y no se hayan gastado.
-6. Los nodos expresan su aceptación del bloque trabajando en la creación del
-próximo bloque en la cadena, utilizando el hash del bloque aceptado como el hash anterior.
-Cada vez que alguien completa un bloque recibe una recompensa en forma
-de bitcoins y/o por cada transacción que se realiza.
+3. Cada nodo minero trabaja en la búsqueda de una prueba de trabajo para su bloque.
+    - Prueba de trabajo: Un Sistema de prueba de trabajo o Sistema "POW" (del inglés Proof-Of-Work system), es un sistema que, para evitar comportamientos indeseados (por ejemplo ataques de denegación de servicio o spam), requiere que el cliente del servicio realice algún tipo de trabajo que tenga cierto coste y que es verificado fácilmente en la parte del servidor. Normalmente el trabajo consiste en realizar un cómputo en el ordenador del cliente.
+4. Cuando un nodo de la minería encuentra y completa dicha prueba de trabajo, este transmite el bloque a todos los nodos.
+5. Los demás nodos acepta el bloque sólo si todas las transacciones son válidas y no se hayan gastado.
+6. Los nodos expresan su aceptación del bloque trabajando en la creación del próximo bloque en la cadena, utilizando el hash del bloque aceptado como el hash anterior.
+
+Como sabréis, cada vez que alguien completa un bloque recibe una recompensa en forma de bitcoins y/o por cada transacción que se realiza.
 
 ### Nodos
 
 Son computadoras conectadas a la red utilizando un software que almacena y distribuye una copia actualizada en tiempo real del blockchain.
-Cada vez que un bloque se valida y se an ̃ade a la cadena, el cambio es comunicado a todos los nodos y este se an ̃ade a la copia que cada uno almacena. Algunos, conocidos como mining pools o grupos de minería, se encargan ade- mas de escuchar nuevas transacciones y agruparlas en bloques para proponerlos como trabajo a los mineros,que luego de ser confirmados son propagados a la
-red y an ̃adidos a la cadena.
+
+Cada vez que un bloque se valida y se añade a la cadena, el cambio es comunicado a todos los nodos y este se añade a la copia que cada uno almacena. 
 
 ![Figura3](img/3.png)
 
+
+
+
 ## CARACTERÍSTICAS Y FUNCIONAMIENTO
 
-Las propiedades mas importantes para describir como funciona la tecnología blockchain son las siguientes: es de carácter descentralizado, pues esta no requiere un organismo o entidad central de confianza, es una tecnología distribuida y de consenso, porque que parte de unas reglas claras y un consenso sobre la validez de las transacciones y su estado, abierta tal que cualquier usuario puede hacer uso de ella y finalmente segura gracias a la verificación criptográfica. [8]
+Las propiedades mas importantes para describir como funciona la tecnología blockchain son las siguientes: 
+
+- Es de carácter descentralizado, pues esta no requiere un organismo o entidad central de confianza.
+- Es una tecnología distribuida y de consenso, porque parte de unas reglas claras y un consenso sobre la validez de las transacciones y su estado. 
+- Abierta tal que cualquier usuario puede hacer uso de ella. 
+- Y segura gracias a la verificación criptográfica. [8]
+
+Vamos a desgranar un poco más estos puntos.
 
 ### Descentralizado
 
-Expertos explican[9], que las redes blockchain son altamente escalables, descen- tralizadas y peer-to-peer. Es asi que, la integridad está basada en un mecanismo de consenso, en vez de una infraestructura basada en la confianza sobre un or- ganismo central, como sería un banco u otra entidad financiera. La red P2P evita que un único participante o grupo controlen el sistema completo. Todos los in- tegrantes de una red se adhieren, a los mismos protocolos, ya sean individuos, organizaciones o actores estatales. Las transacciones son irreversibles, por lo que una vez realizadas no pueden anularse, modificarse o revertirse.
-Así, se eliminan los riesgos que vienen con los sistemas centralizados[10]. La red carece de puntos críticos o centrales de vulnerabilidad que podrían ser ex- plotados. Los métodos de seguridad Blockchain incluyen el uso de la criptografía de clave pública: Una clave pública es una dirección en la cadena de bloque. Los tokens, como por ejemplo bitcoins, son enviados a través de la red y se registran como pertenecientes a esa dirección. Una clave privada es como una contrasen ̃a que le da acceso a su propietario a sus activos digitales.
+Las redes blockchain son altamente escalables, descentralizadas y peer-to-peer. Es asi que, la integridad está basada en un mecanismo de consenso, en vez de una infraestructura basada en la confianza sobre un organismo central, como sería un banco u otra entidad financiera. La red P2P evita que un único participante o grupo controlen el sistema completo. Todos los integrantes de una red se adhieren, a los mismos protocolos, ya sean individuos, organizaciones o actores estatales. Las transacciones son irreversibles, por lo que una vez realizadas no pueden anularse, modificarse o revertirse.
+
+Así, se eliminan los riesgos que vienen con los sistemas centralizados[10]. La red carece de puntos críticos o centrales de vulnerabilidad que podrían ser explotados. Los métodos de seguridad Blockchain incluyen el uso de la criptografía de clave pública: Una clave pública es una dirección en la cadena de bloque. Los tokens, como por ejemplo bitcoins, son enviados a través de la red y se registran como pertenecientes a esa dirección. Una clave privada es como una contraseña que le da acceso a su propietario a sus activos digitales.
+
+-- 
 Cada nodo o minero en un sistema descentralizado tiene una copia de la cadena de bloqueo. La calidad de los datos se mantiene mediante la replicación masiva de bases de datos[11]. No existe una copia oficial centralizada y ningún usuario es de más confianza que cualquier otro.
+--
 
 ### Sistema abierto
 
-Es abierto porque cualquier persona puede formar parte tan solo con descargándose el programa. Luego ella podrá realizar movimientos y transacciones con monedas virtuales y acceder a los datos registrados en su cadena de bloques.
+Es abierto porque cualquier persona puede formar parte tan solo con descargándose el programa. Luego ella podrá realizar movimientos y transacciones -- con monedas virtuales -- y acceder a los datos registrados en su cadena de bloques.
+
 A veces los bloques se pueden producir concurrentemente, creando un fork temporal. La cadena de bloques tiene un algoritmo especificado para marcar diferentes versiones de la cadena para que una con un valor más alto pueda ser seleccionada sobre otras. Los bloques no seleccionados para su inclusión en la cadena se denominan bloques húerfanos[12], como se observa en la figura 4.
 
 ![Figura4](img/4.png)
 
-Los peers de la red pueden tener de vez en cuando versiones diferentes de la base de datos. Estas solo guardan la versión con la puntuación más alta que conocen. Cada vez que un compan ̃ero recibe una versión de puntuación más alta (usualmente la versión antigua mas un solo bloque an ̃adido) extienden o sobrescriben su propia base de datos y retransmiten la mejora a sus pares. Por ejemplo, en una cadena de bloques utilizando el sistema de prueba de trabajo, la cadena con la prueba de trabajo más acumulativa siempre es la considerada válida por la red.
+Los peers de la red pueden tener de vez en cuando versiones diferentes de la base de datos. Estas solo guardan la versión con la puntuación más alta que conocen. Cada vez que un compañero recibe una versión de puntuación más alta (usualmente la versión antigua mas un solo bloque añadido) extienden o sobrescriben su propia base de datos y retransmiten la mejora a sus pares. Por ejemplo, en una cadena de bloques utilizando el sistema de prueba de trabajo, la cadena con la prueba de trabajo más acumulativa siempre es la considerada válida por la red.
 
 ### Seguridad
 
-Los bloques que forman parte del blockchain son ordenados en la cadena por orden cronológico y tienen un código alfanumérico conocido como hash, que cor- responde al bloque que los precede, gracias a ese hash todos están referenciados por el bloque que los creo, por lo que solo los bloques que contienen un código valido son introducidos en la cadena y replicados a todos los nodos. Es gracias a este método lo que hace virtualmente imposible modificar un bloque que ha sido introducido ya hace un cierto tiempo.
-Los nodos mineros son los encargados de la creación de nuevos bloques de la cadena, computando y an ̃adiendo luego a cada uno de ellos el hash y todas las nuevas transacciones correspondientes. Por lo tanto el blockchain nos permite llevar a cabo, una contabilidad publica de los movimientos realizados en la red de manera transparente, minimizando la posibilidad de fraude, no permitiendo la perdida de datos y con un sistema totalmente trazable.
+Los bloques que forman parte del blockchain son ordenados en la cadena por orden cronológico y tienen un código alfanumérico conocido como hash, que corresponde al bloque que los precede, gracias a ese hash todos están referenciados por el bloque que los creo, por lo que solo los bloques que contienen un código valido son introducidos en la cadena y replicados a todos los nodos. Es gracias a este método lo que hace virtualmente imposible modificar un bloque que ha sido introducido ya hace un cierto tiempo.
+
+Los nodos mineros son los encargados de la creación de nuevos bloques de la cadena, computando y añadiendo luego a cada uno de ellos el hash y todas las nuevas transacciones correspondientes. Por lo tanto el blockchain nos permite llevar a cabo, una contabilidad publica de los movimientos realizados en la red de manera transparente, minimizando la posibilidad de fraude, no permitiendo la perdida de datos y con un sistema totalmente trazable.
 
 ![Figura5](img/5.png)
 
-
-Es necesario que los nodos que integran la red estén sincronizados mante- niendo almacenada la cadena de bloques correcta, es decir la que esta actu- alizada. Como también observamos anteriormente, cada bloque contiene infor- mación sobre las transacciones de un periodo concreto, estas son almacenadas en una estructura denominada Merkle Tree (en honor a su creador: Ralph Merkle), también la información criptográfica del bloque precedente es decir, el código hash (Las funciones de hash, permiten parear strings de un taman ̃o cualquiera a strings de taman ̃o fijo en una cantidad de tiempo razonable, en el caso de la moneda virtual Bitcoin se emplea la función hash criptográfica SHA-256, siendo sus apuntadores hash de un taman ̃o fijo de 256 bit), y un número único llamado nonce, el cual es un valor arbitrario que puede utilizarse una sola vez, es gen- erado por los mineros mediante la prueba de trabajo (Proof of Work o PoW) y sirve como método sencillo para autenticar un bloque en caso de una posible modificación o reutilización de su contenido, sin tener que volver a procesar toda la cadena, ahorrando así mucho trabajo computacional.
+Es necesario que los nodos que integran la red estén sincronizados manteniendo almacenada la cadena de bloques correcta, es decir la que esta actualizada. Como también observamos anteriormente, cada bloque contiene información sobre las transacciones de un periodo concreto, estas son almacenadas en una estructura denominada Merkle Tree (en honor a su creador: Ralph Merkle), también la información criptográfica del bloque precedente es decir, el código hash (Las funciones de hash, permiten parear strings de un tamañoo cualquiera a strings de tamaño fijo en una cantidad de tiempo razonable, en el caso de la moneda virtual Bitcoin se emplea la función hash criptográfica SHA-256, siendo sus apuntadores hash de un tamaño fijo de 256 bit), y un número único llamado nonce, el cual es un valor arbitrario que puede utilizarse una sola vez, es generado por los mineros mediante la prueba de trabajo (Proof of Work o PoW) y sirve como método sencillo para autenticar un bloque en caso de una posible modificación o reutilización de su contenido, sin tener que volver a procesar toda la cadena, ahorrando así mucho trabajo computacional.
 
 Esta estructura de árbol binario, reúne pedazos de información y da como resultado un hash por cada uno de ellos, que vuelven a agruparse en pares y generan un nuevo hash que es agrupado con otro y así sucesivamente hasta alcanzar un único bloque raíz que se conoce como root hash, y es registrado en la dirección del bloque actual con el fin de reducir el espacio ocupado por cada bloque. Se puede observar un ejemplo en el gráfico 6:
 
 ![Figura6](img/6.png)
 
 Esta estructura permite recorrer cualquier nodo del árbol para la verificación de que ningún dato ha sido falsificado o adulterado.
+
 Un bloque se verifica cuando el nonce, un número aleatorio que es utilizado una única vez, se encontró que, pasado por una función hash, proporciona un resultado menor que el valor objetivo. Una vez que el esfuerzo computacional satisface la prueba de trabajo, no se puede cambiar sin hacer de nuevo todo el trabajo, y, como los bloques están encadenados juntos, se deben calcular todos los bloques despúes de él también. Las pruebas de trabajo son esencialmente un sistema de una CPU, un voto. La decisión de la mayoría esta representada por la cadena mas larga, que tiene el mayor esfuerzo de pruebas de trabajo invertido. Para modificar un bloque pasado, para intentar robar bitcoins, un atacante debe rehacer todas las pruebas de trabajo y todos los bloques despúes de el y luego alcanzar y sobrepasar el trabajo de los nodos honestos[7].
+
 Las cadenas de bloque también pueden utilizan otros esquemas de consenso, para serializar los cambios. Los métodos de consenso alternativos incluyen Proof of Stake y Proof of Burn.
 
 ## APLICACIONES
+
+Blockchain tiene un gran potencial de transformar los modelos de operación de negocios a largo plazo. Es una tecnología fundacional con la capacidad de crear nuevas bases para la economía global y para los sistemas sociales. Su uso prom- ete traer incrementos significativos a la eficiencia de la cadena de suministro, transacciones financieras, libros de activos, y a la conexión social descentralizada.
+
+Esta tecnología puede ser integrada en múltiples áreas y a continuación veremos algunas de ellas:
+
+### Monedas digitales
+
+Una de las aplicaciones mas populares del blockchain son las cryptomonedas o monedas digitales, bitcoin siendo la mas conocida de todas.
+
+A principios del 2009 nació el Bitcoin de la mano de Satoshi Nakamoto, seudónimo que identifica a la persona o equipo que crearon la criptomoneda, que en la actualidad es la moneda digital más famosa, se crea, se transfiere y se deposita de forma electrónica, además está protegida criptográficamente.
+
+Esta divisa digital es una moneda descentralizada, nadie pueda controlarla. Está fuera del alcance de gobiernos o bancos centrales. Esta independencia de un organismo central es la principal característica respecto al resto de monedas convencionales.
+
+#### Funcionamiento de Bitcoin
+
+Para empezar a utilizar bitcoin, primeramente se necesita de una billetera Bitcoin, donde se almacena las claves privadas que necesitamos para acceder a nuestras monedas. Estas billeteras pueden ser aplicaciones móviles o cuentas online en plataformas especializadas, algunas opciones disponibles son Bitcoin Core, Multibit, Armory, Blockchain.info, entre otras.
+
+Como ya estábamos mencionando la tecnología que hace posible su funcionamiento es la cadena de bloques, todas las transacciones validas se agregan a la cadena, el orden cronológico del Blockchain facilita la seguridad que aporta la criptografía.
+
+Una transacción en la red bitcoin es una transferencia con bitcoins que va de una billetera a otra, por lo tanto, cada transacción se incluye en la cadena de bloques. En los monederos (o billeteras) aparece una clave de firmas que valida la transacción. Estas transferencias suelen ser confirmadas rápidamente, mediante el proceso conocido como minería.
+
+Este es un sistema de consenso distribuido que sirve para verificar los movimientos pendientes y agregarlos definitivamente a la cadena. Este proceso impide que un bloque anterior sea modificado o anulado, ya que produciría la corrupción e invalidez de los bloques posteriores.
+
+##### Características de Bitcoin
+
+– Utiliza blockchain como tecnología base. – Pagos rápidos P2P a nivel mundial.
+– No tiene el problema del double-spend. – Bajos costos de procesamiento.
+– Decentralizado
+– Disponible a cualquiera, abierto. – Anonimato.
+– Transparente.
+
+### Smart Contracts
+
+Una de sus aplicaciones emergentes más relevantes tiene que ver con lo que se conoce como “contratos inteligentes” o smart contracts.
+
+En 1994, Nick Szabo, un jurista y criptografo, se dio cuenta de que un libro mayor descentralizado podría ser utilizado para realizar contratos digitales. En este formato los contratos pueden ser convertidos a código, guardados y replicados en el sistema y supervisados por la red de computadoras que corre el programa blockchain.
+
+Los contratos inteligentes nos ayudan a intercambiar dinero, propiedades, activos o cualquier bien de valor de una manera sencilla, evitando los gastos por el servicio de intermediarios y sin revelar ningún tipo de información confidencial sobre las partes y/o naturaleza de la transacción.
+
+Un ejemplo seria la venta o alquiler de un automóvil. Se podría hacerlo a través de blockchain pagando con monedas digitales. El comprador obtiene el recibo que es un smart contract, y la llave digital que llega a este en la fecha especificada. Si la llave no llega a tiempo, se le reembolsa el dinero. Si llega ambas partes reciben lo acordado a tiempo. El sistema funciona con la premisa de Si-entonces y tiene como veedores a mucha gente, así que se puede esperar un delivery sin inconvenientes. Si te doy la llave, de seguro obtengo mi pago, si envías cierta cantidad de bitcoin por ejemplo, recibirás la llave del automóvil. El documento es automáticamente cancelado después de la fecha, y el código no puede ser interferido por ninguno sin que que el otro sepa ya que todos los participantes son alertados simultáneamente.
+
+– Autonomía: Es uno mismo quien accede al acuerdo. No existen intermediarios, por lo que también se ahorra dinero.
+– Confianza: Los documentos están encriptados en un shared-ledger. Nopueden perderse.
+– Backup: Todos los miembros de la red tienen los documentos duplicados.
+– Rapidez: Ahorro de tiempo en el procesamiento de documentos, papeleos manuales, etc.
+– Seguridad: Obtenida gracias a la criptografía.
+
+### Almacenamiento en la nube distribuido
+
+Anteriormente las compañías hosteaban sus propios servidores en sus instalaciones, esto les daba mas control pero repercutía en los costos, también necesitaban expertos para que instalen y mantengan los servidores, sin mencionar la inversión en servidores de redundancia.
+
+Es por esto que las organizaciones han optado por la nube. Con tentadoras ofertas se pueden obtener servicios confiables de storage y backup sin mucha preocupación.
+
+Pero esta comodidad también tiene sus desventajas. Cuando utilizamos servicios en la nube, ponemos nuestra confianza en terceros, les confiamos nuestra información muchas veces delicada y de mucho valor.
+
+Existen paralelos entre la infraestructura del almacenamiento en la nube y la infraestructura financiera. Es por eso que también puede ser mas eficiente y menos costosa utilizando blockchain.
+
+Blockchain permite la creación de un mercado de almacenamiento distribuido y descentralizado. Algunos hosts de la red pueden vender su capacidad de storage sobrante y los que necesitan pueden pagar y subir sus archivos los cuales son encriptados, fragmentados y distribuidos inteligentemente por toda la cadena de bloques.
+
+Con blockchain se pueden obtener:
+
+– Completa descentralización y verdadera redundancia: Los datos son almacenados en decenas de nodos distribuidos por todo el mundo, y difícilmente puedan ser afectados por ataques.
+
+– Privacidad total: Terceros no controlan datos de usuario ni tienen acceso a ellos. Cada nodo solo almacena los fragmentos de estos datos, y los usuarios controlan sus propias llaves.
+
+– Reducciones de costo: En comparación el almacenamiento por blockchain cuesta alrededor de 2 dolares por terabyte al mes comparado con Amazon que demanda 25 dolares por terabite[14].
+
+Storj es otra de las empresas que esta incursionando en este sector, es una startup la cual esta realizando pruebas de un un prototipo un servicio que permite que el almacenamiento remoto se haga de forma distribuida utilizando una red basada en la Blockchain para así aumentar la seguridad.
+
+### Patentes/Registro de Propiedad
+
+La cadena de bloques también puede ser aplicada al registro de patentes o de protección intelectual, ya que en cada bloque se puede introducir todo tipo de información, incluyendo fechas o timestamps.
+
+Una empresa como Apple, o un artista, podría probar que ha creado una tecnología o una música respectivamente, en una fecha concreta sin necesidad de hacer una aplicación formal para registrar la patente.
+
+Podría vincular esos documentos internos al hash de una transacción realizada en ese momento y probar así que ellos han sido los primeros en desarrollarla. De este modo, el autor conseguiría controlar el uso de su obra en formato digital y garantizar que se le remunere adecuadamente.
+
+### Otras aplicaciones
+     
+    - Internet of Things
+    - Voto electrónico
+    - Gobierno transparente
+    - Ecommerce
+    - Identificación
+
 
 
 
