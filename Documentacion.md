@@ -246,47 +246,67 @@ Encontramos dos servicios principalmente:
 Basicamente lo que te proporcionan son unas plantillas con las que tu puedes construir tu topologia de red para desplegar más rapidamente.
 
 
+## NOTAS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- BUSCAR ALGUN EJEMPLO POR EJEMPLO DE SMART CONTRACTS EN ALGÚN PROVEEDOR PRINCIPAL
 
 
 ## Cuestiones
 
 - ¿Es totalmente seguro blockchain?
 - Si por ejemplo bitcoin ocupa 170 GB, ya que el blockchain hace uso de la replicación de datos en cada base de datos.... esto en cloud no estaría generando una replicación innecesaria?
+
+
+# ENLACES
+
+## Explicación
+
+- Qué es blockchain: la explicación definitiva para la tecnología más de moda => https://www.xataka.com/especiales/que-es-blockchain-la-explicacion-definitiva-para-la-tecnologia-mas-de-moda
+- Blockchain: la transferencia de datos digitales no centralizada => https://blog.mdcloud.es/blockchain-la-transferencia-datos-digitales-no-centralizada/
+- Cadena de bloques en AWS => https://aws.amazon.com/es/blockchain/
+
+## Principios
+
+- Descentralización, inmutabilidad y seguridad de los datos, las claves de Blockchain => https://www.indracompany.com/es/blogneo/descentralizacion-inmutabilidad-seguridad-datos-claves-blockchain
+- ¿Es 'blockchain' realmente inmutable? => https://www.bbva.com/es/blockchain-realmente-inmutable/
+
+## Blockchain as a service
+
+- Will the cloud move to the blockchain? => https://hackernoon.com/will-the-cloud-move-to-the-blockchain-6ceabd0ce664
+- Los proveedores 'cloud' ya se preparan para ofrecer 'blockchain as a service' => https://www.computerworld.es/tendencias/los-proveedores-cloud-ya-se-preparan-para-ofrecer-blockchain-as-a-service
+- Qué es 'Blockchain as a Service' y por qué es interesante para las empresas => https://www.bbva.com/es/blockchain-as-service-puede-interesar-negocio/
+- 19 BLOCKCHAIN-AS-A-SERVICE COMPANIES MAKING THE DLT MORE ACCESSIBLE => https://builtin.com/blockchain/blockchain-as-a-service-companies
+- How to choose a Blockchain as a Service BaaS provider => https://www.ledgerinsights.com/how-to-blockchain-as-a-service-baas/
+- Why Blockchain As A Service Solutions Aren’t Blockchains => https://hackernoon.com/why-blockchain-as-a-service-solutions-arent-blockchains-8d588b1f35ce
+- Blockchain-as-a-Service  => https://www.investopedia.com/terms/b/blockchainasaservice-baas.asp
+
+- https://es.ihodl.com/tutorials/2018-05-23/blockchain-service-como-funciona/
+
+## Varios (Predicciones - Robos - Usos -  )
+
+- 8 Predicciones Que Marcarán Blockchain En 2019: https://www.revistacloudcomputing.com/2019/01/8-predicciones-que-marcaran-blockchain-en-2019/
+- "Bandido blockchain": Cómo un hacker ha estado robando millones de dólares de ETH al adivinar claves privadas débiles => https://es.cointelegraph.com/news/blockchain-bandit-how-a-hacker-has-been-stealing-millions-worth-of-eth-by-guessing-weak-private-keys
+- Blockchain: Qué es y cuales podrían ser sus usos y ventajas en la Industria 4.0: https://grupogaratu.com/que-es-blockchain-usos-y-ventajas/
+- Blockchain: 5 aplicaciones más allá del Bitcoin => https://www.globbit.com/blockchain-5-aplicaciones-mas-alla-del-bitcoin-13032/
+- BlockCloud: Re-inventing Cloud with Blockchains => https://guardtime.com/blog/blockcloud-re-inventing-cloud-with-blockchains
+- El impacto del blockchain en la ciberserguridad => https://www.pandasecurity.com/spain/mediacenter/seguridad/blockchain-ciberserguridad/
+
+## IBM CLOUD
+
+- https://www.ibm.com/developerworks/ssa/views/cloud/libraryview.jsp?sort_by=&show_abstract=true&show_all=&search_flag=&contentarea_by=Cloud+computing&search_by=Blockchain&product_by=-1&topic_by=-1&industry_by=-1&type_by=Todos+los+Tipos&ibm-search=Buscar
+- INTERESANTE => https://www.ibm.com/developerworks/ssa/cloud/library/cl-blockchain-basics-intro-bluemix-trs/index.html
+- https://cloud.ibm.com/catalog/services/blockchain
+- INTERESANTE => https://cloud.ibm.com/docs/services/blockchain?topic=blockchain-develop-smart-contracts
+- https://cloud.ibm.com/docs/blockchain?topic=blockchain-blockchain-component-overview
+
+
+## Principales
+
+- https://www.computerworld.es/tendencias/los-proveedores-cloud-ya-se-preparan-para-ofrecer-blockchain-as-a-service
+- https://www.bbva.com/es/blockchain-as-service-puede-interesar-negocio/
+- https://www.coincrispy.com/2018/05/23/como-funciona-blockchain-as-a-service-baas/
+- https://es.ihodl.com/tutorials/2018-05-23/blockchain-service-como-funciona/
+- https://aws.amazon.com/es/blockchain/
+- https://aws.amazon.com/es/qldb/faqs/
+- https://aws.amazon.com/es/managed-blockchain/
+- https://azure.microsoft.com/es-es/features/blockchain-workbench/
